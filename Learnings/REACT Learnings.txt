@@ -1,0 +1,84 @@
+Destructuring:
+*************************************
+Pulling values out of an array :
+	const arr = [1,2,3,4];
+	[a,b] = arr;
+	console.log(a); 1
+	console.log(b); 2
+	
+Pulling values out of object :
+		const obj = {
+			name: 'Max',
+			age : 29,
+			weight : 67
+			};
+		{name,age}=obj	
+		console.log(name); //Max
+		console.log(age);  //29
+		console.log(weight); //undefined
+		
+Spread:
+**************************************
+
+let arr2 = [...arr,5]; // [1,2,3,4,5]		
+
+let obj1={...obj,gender:'male'}; // {name: 'Max',age : 29,weight : 67 ,gender :'male'}
+
+Rest :
+**************************************
+function myFunc = (...args) => { //creates array of arguments
+	return args.filter(p=>{
+		p === 1;
+	})
+}
+
+myFunc(1,2,3);
+
+Types:
+*****************************************
+Number,boolean,strings are primitive types:
+	store 1 var to another it will copy the value
+	e.g. const a = 1 ; const b =a;
+	
+Array, Objects are reference types:
+const person = {
+		name: 'Max'
+	}
+const secondPerson = person	;  "//{name:'Manu'} //here pointer to person is stored
+const sP = {
+	...person; //it copies values not pointer
+}
+person.name = 'Max';
+console.log(secondPerson); // {name:MAx}
+console.log(sP); // {name: Manu}
+
+Export & Import
+****************************************
+f1.js	
+const person = {
+
+}		
+export default person; --> import person from './f1.js'; or import prs from './f1.js';
+
+f2.js
+export const myFunc = () => {...}   --> import {myFunc} from './f2.js';
+export const baseData = 10;      	--> import {baseData} from './f2.js';
+
+********************************************************************************************
+npm/yarn - dependency management tool to manage packages
+
+WebPack as Bundler - modular code splitted in to diff files. All this code bundles up ito couple of files
+when we ship it. All browers dont use splitted files(old ones strictly no) .even if they support then also 1000 of request
+doesnt make sense.
+
+Babel + Preset as compiler - JS compilation from modern features to workarounds that works on all the browers
+for next-gen features
+hooked into webpack to be part of bundling
+
+Development server - to run code 
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+when are promisies used in API?
+
+<td>   
+                            <!-- <form name="my-form2" action="/delete/<%= posts[i].id %>" method="POST">  -->
+                            <form name="my-form2" action="/editdelete/<%= posts[i].id %>" method="POST">     
+                                <button class="btn btn-sm btn-warning" type="hidden" value="delete" >Delete</button>
+                                <!-- <button class="btn btn-sm btn-warning" >Delete</button> -->
+                            </form>
+                        </td>
+						
+						
+						state : mutable set & get
+						
+						ECMA - ES6 & Babel libray
+						asynchronous 
+						
+						components - reusable
+						FLUX - unidirectional data flow - redux
+						
+						DOM -predefined objects/classes
+						
+						
+						npm init -y creates package.json
+						
+						React top - level API
+						React DOM -  DOM specific methods
+						Babel - JS cmpiler lets us use ES6 
+						Babel CLI - to access classe provided by babel
+						
+						webpack client & server
+						
+						
+						
+						http://blog.nbostech.com/2016/10/store-and-read-image-file-in-mongodb-using-nodejsexpressmongoose/
+						
+						https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
+						inventory - for item sale and stock
+						CURD , authorized login
+						
+						
+body-parser : 
+---------------------------
+Node.js body parsing middleware.
+Parse incoming request bodies in a middleware before your handlers,
+available under the req.body property.
+
+path:
+The Path module provides a way of working with directories and file paths.
+eg path.dirname()

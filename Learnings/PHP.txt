@@ -1,0 +1,103 @@
+struct_
+xml parse into struct - parameters & return type (1 on success, or 0 on failure.)
+xml_parse_into_struct(parser,xml,value_arr,index_arr)
+Value array - containing the data from the parsed XML
+Index array - containing pointers to the location of the values in the Value array
+
+array function combine & diff
+
+string concatnate function using standard algo
+string function - stristr strchr strstr string compare functions
+strcmp()	Compares two strings (case-sensitive)
+stristr()	Finds the first occurrence of a string inside another string (case-insensitive)
+boolean value to image
+return type of xml parse into struct
+printf sprintf
+
+echo + print = ? method that combine these two
+
+final keyword -  it cannot be extended/inherited/overwrite. only classes and methods may be declared as final.
+
+change image size when uploading a image into page
+
+sorting multidimentinal array array_multisort()   :-
+*************************************************************************
+array_multisort(array1,sorting order,sorting type,array2,array3...)
+<?php
+$ar1 = array(10, 100, 100, 0);
+$ar2 = array(1, 3, 2, 4);
+array_multisort($ar1,asc,type $ar2);
+
+var_dump($ar1);
+var_dump($ar2);
+?>
+In this example, after sorting, the first array will contain 0, 10, 100, 100. The second array will contain 4, 1, 2, 3.
+The entries in the second array corresponding to the identical entries in the first array (100 and 100) were sorted as well.
+
+<?php
+$ar = array(
+       array("10", 11, 100, 100, "a"),
+       array(   1,  2, "2",   3,   1)
+      );
+array_multisort($ar[0], SORT_ASC, SORT_STRING,
+                $ar[1], SORT_NUMERIC, SORT_DESC);
+var_dump($ar);
+?>
+In this example, after sorting, the first array will transform to "10", 100, 100, 11, "a" (it was sorted as strings in ascending order).
+The second will contain 1, 3, "2", 2, 1 (sorted as numbers, in descending order).
+
+*************************************************************************
+
+output of echo/print/printf/vsprintf can be returned to a string -> vsprintf
+
+
+conn = mysqli_connect($servername, $username, $password); & conn = mysql_connect($servername, $username, $password); & conn = mysqli($servername, $username, $password);
+
+
+strnatcmp()	Compares two strings using a "natural order" algorithm (case-sensitive)
+strncmp()	String comparison of the first n characters (case-sensitive)
+strcmp()	Compares two strings (case-sensitive)
+
+strnatcasecmp()	Compares two strings using a "natural order" algorithm (case-insensitive)
+strncasecmp()	String comparison of the first n characters (case-insensitive) includes lenth parameter compare from 0-lenth
+strcasecmp()	Compares two strings (case-insensitive)
+
+
+stristr()	Finds the first occurrence of a string inside another string (case-insensitive)
+strstr()	Finds the first occurrence of a string inside another string (case-sensitive)
+
+http://ycsoftware.net/differences-between-printf-print-echo-sprintfvprintf-vfprintf-vsprintf-in-php/
+
+vfprintf()	Writes a formatted string to a specified output stream i.e. file /db
+			echo vfprintf($file,"There are %u million bicycles in %s.",array($number,$str));
+			output 40
+			file contains : There are 9 million bicycles in Beijing.
+			
+vsprintf()	writes a formatted string to a variable.
+			echo $txt = vsprintf("There are %u million bicycles in %s.",array($number,$str));
+			There are 9 million bicycles in Beijing.
+		
+vprintf		
+		The vprintf() function outputs a formatted string
+		vprintf("There are %u million bicycles in %s.",array($number,$str));
+		There are 9 million bicycles in Beijing.
+		
+sprintf 
+		Returns a string produced according to the formatting string format
+
+		
+printf("There are %u million bicycles in %s.",$number,$str);
+		There are 9 million bicycles in Beijing.
+		Output a formatted string
+		returns length of o/p string
+		
+print("Hi");
+		Hi
+		It will always return 1.
+		
+echo :
+	Does not returns anything 
+	Output one or more strings
+		
+
+__Construct()

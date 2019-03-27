@@ -1,0 +1,40 @@
+. php artisian serve - boots up local Laravel development server at the URL 
+. To run page other than the homepage i.e. without '/' use 'URL/about'
+. to sign in to mysql - 'php mysql -uroot -p ' where username is uroot and password is blank
+. create a database using ' create database blog; 
+. to change the current database : 'use blog;'
+. to list tables in database: 'show tables;'
+. ENV file in our project that stores the passwords,keys,API keys. 2 files for production and development.
+. update the database ,username and password that we are using above in this file.
+. Run command ' php artisian migrate;' - to include schema for tables that almost every project in laravel used
+										- create those tables like users,migrations,password_resets
+		we can again run command to list the tables in the database.
+. the schema of these tables can be found in database->migrations
+. open the database in your system like my sql and the enter the details to connect and you will be able to see the 3 tables
+. to see details about any command : ' php artisisan help (make:migration/cmd)' 
+. make-migration{name} is used to create the schema for any database table
+. "blog composer dump-autoload" - to dump the 
+. "php artisisan make:migration migration_name --create=tasks(table name)" --> this will create the schema for tasks table in the migration file with necessary timestamp fields.
+  - if we see the mysql database, the tsaks table is still not showing over there as we have prepared the migration but it is not yet migrated the database, so
+  - "php artisian migrate " -> use this to migrated the db
+  - on refreshing the mysql you will be able to see the database
+. If there is any changes required in the schema of table then go to migration file and update it , followed by " php artisian migrate:refresh" which rollback all the migrations and re-run them again.
+. "php artisian make:model task" - this model is created under app directory. 
+. "php artisian tinker" to boot up the laravel's shell, using the eloquent model we can use number of methods to interact with database
+   >>> App\Task::all(); 
+   >>> App\Task::where('id', '>',1)-get();
+   >>>App\Task::pluck('body');
+   >>>App\Task::pluck('body')->first();
+   >>>App\Task::where('completed',1)->get();  completed tasks    
+   >>>App\Task::where('completed',0)->get();  incompleted tasks
+
+. To create migration and eloquent model at the same time :
+   "php artisian make:model task -m" and in order to load that data create a object as 
+	"$task = new App\task" and add data
+	$task->body ="Go to market";
+	$task->completed = TRUE;
+	$task->save(); to save the changes 
+	
+	
+	
+	Then refresh the migration " php artisian migrate:refresh"

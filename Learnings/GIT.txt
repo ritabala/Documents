@@ -1,0 +1,39 @@
+git config --global user.name "ritabala"
+git config --global user.email "rtbl20@gmail.com"
+
+
+git init : makes the local project git-able (.get folder gets created in our project folder)
+git status : checks if any file is untraced i.e not found in our GIT
+git add [file] || --all  : add particular or all files to git
+git status : again checks for any file in project folder not found in git
+git commit -m "any message"  : creates snapshots i.e. version creation
+git remote add origin repoName : creates links to github repository
+git push origin master : copies all the files from git to github
+
+
+download project:
+
+git clone reponame : copies project to user folder
+git pull origin master : copies the newly created file in github to user folder
+
+branches:
+clones for different users:
+
+git branch : lists all the branches
+git checkout master/branchname : changes the ownership
+git merge myuser : merges file from myuser to master (but github not updated)
+git push origin master : updates github for new file
+
+Laravel DataTables is a package that handles the server-side works of DataTables using Laravel.
+
+Laravel and client side datatable
+
+$ git add . :
+we're currently working in the root directory, 
+"git add ." will only add files located in the root directory. 
+But the root directory may contain many other directories with files. 
+How can we add files from those other directories plus the files in the root directory to the staging area?
+ Git offers the command below:
+
+$ git add --all
+

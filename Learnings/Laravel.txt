@@ -1,0 +1,126 @@
+composer node npm in different lib
+php in diff 
+
+
+1
+Go to market.
+2018-07-24 12:44:04
+2018-07-24 12:44:04
+ 
+ Edit
+ Copy
+ Delete
+2
+Buy the required things.
+2018-07-24 12:44:04
+2018-07-24 12:44:04
+ 
+ Edit
+ Copy
+ Delete
+3
+Pay the bills.
+2018-07-24 12:44:50
+2018-07-24 12:44:50
+ 
+ Edit
+ Copy
+ Delete
+4
+Return home.
+
+
+layout &views
+
+@yield('content')
+@extends('layout')
+@section(çontent')
+@endsection
+
+
+ 
+
+web file:
+controller - Posts
+model    - post
+migration with table - posts
+
+
+class="p-3">???
+
+
+vue with laravwl mix?
+call methods as a property in model?
+
+Using store method in controller
+    public function store(Post $post)
+calling method from model
+
+this->comment; gets all the comments related to the post
+this->comment(); gets the 
+
+touch:- to create file
+link between env and config files
+###
+config files conatains all the configuration for the project 
+where as secure passwords that are not required to comit to version control 
+are saved in .env file not in confi/database . And these environment strings in .env file can be 
+referenced in tany of the config file as: "env('env-strings','database-type')"
+###
+
+desctructor
+
+cookies
+
+password reset link - http://127.0.0.1:8000/password/reset/248884494001708efc042fbf09e1bf6134b71112c795412c28c7842be34bc700
+
+giving name to routes - to redirect from a controller. Or link to the route inside your blade template..
+Route::get('/folder/login', 'AuthController@getSignin')->name('folder.login');
+return redirect()->route('folder.login');
+<a href="{{ route('folder.login') }}">folder login</a>
+
+web and api??
+
+bstext
+fasides
+helper function
+
+
+orderby raw
+
+Appservice provider:
+        Schema::defaultStringLength(191);
+		
+class and function in view composer video
+vue?
+Javascript:-		
+runs on client side  vs server side - js /php
+sort not worked properly
+
+show hide
+slideup slidedown delay
+fadein fadeout
+toggle for everything
+toggle.toggle
+
+html
+mouseover
+click
+
+atr
+data-* attributes
+jquery and javascript
+
+console thing not working
+name not used in form
+understanding of backend here
+
+
+Material Design)------------------
+
+array over object
+($post->comment as $comment)>>> 
+comment(); belogsTo work on foreign keys??
+href="/post/?month={{$archive1['month']}}&year={{$archive1['year']}}
+
+why index is being called - when calling scopefilter function we only have to pass the array name not the fields
